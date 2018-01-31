@@ -6,3 +6,11 @@ def reverse_each_word(string)
   }
   string = temp2.join(" ")
 end
+
+def reverse_each_word(string)
+  temp = string.split(" ")
+  temp.collect { |word|
+    temp.push(word.reverse)
+  }
+  string = temp.join(" ")
+end
